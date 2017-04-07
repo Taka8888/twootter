@@ -24,7 +24,7 @@ class BlogsController < ApplicationController
   
   def confirm
     @blog = Blog.new(blogs_params)
-    render :new if @blog.invalid?
+      render :new if @blog.invalid?
   end
   
   def edit
@@ -47,7 +47,7 @@ class BlogsController < ApplicationController
   
   private
     def blogs_params
-      params.require(:blog).permit(:title, :content)
+      params.require(:blog).permit(:content)
     end
   
   #idをキーとして値を取得するメソッド
