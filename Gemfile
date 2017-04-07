@@ -47,4 +47,3 @@ end
   gem 'jquery-turbolinks'
   gem 'rails_12factor', group: :prodution
 
-
